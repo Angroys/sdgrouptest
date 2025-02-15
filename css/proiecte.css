@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    gap: 30px;
+    background-color: #fff !important;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 10 !important;
+}
+
+.alingcenter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.proiecte{
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.row-block{
+    width: 350px;
+    height: 450px;
+    background-color: black;
+    cursor: pointer;
+    object-fit: contain;
+    font: 500 normal 1.25rem Raleway, sans-serif;
+
+}
+
+.row-block-youtube{
+    width: 350px;
+    height: 200px;
+    background-color: black;
+    cursor: pointer;
+    object-fit: contain;
+    font: 500 normal 1.25rem Raleway, sans-serif;
+
+}
+
+.row-block img{
+    width: 100%;
+    height: 100%;
+}
+
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.proiecte-header{
+    padding-top: 120px;
+    padding-bottom: 30px;
+    gap: 10px;
+}
+
+.proiecte-header .row{
+    margin-top: 20px;
+}
+
+#proiectDetail{
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 60vh;
+    z-index: 50;
+}
+
+.wrapper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .8;
+}
+
+#proiectDetail .row img{
+    width: 550px;
+    height: 600px;
+}
+
+
+#proiectDetail .row{
+    align-items: start;
+    justify-content: center;
+    color: #fff;
+    gap: 40px;
+    opacity: 1 !important;
+    margin: 0 auto;
+    z-index: 90;
+}
+
+.projectdetailtext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.projectdetailtext p{
+    margin-top: 5vh;
+    max-width: 400px;
+    font-size: 1.25rem;
+}
+
+#close{
+    align-self: flex-end;
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .row{
+        flex-direction: column;
+    }
+
+    #proiectDetail .row img{
+        width: 300px;
+        height: 300px;
+        align-self: center;
+        order: 2;
+    }
+
+    .projectdetailtext{
+        order: 0;
+        align-self: center;
+        max-width: 275px;
+    }
+}

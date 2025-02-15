@@ -1,0 +1,171 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Raleway";
+  src: url("../assets/fonts/Raleway/Raleway-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+    font-family: "Raleway";
+    src: url("../assets/fonts/Raleway/Raleway-Regular.ttf") format("truetype");
+    font-weight: bolder;
+  }
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.should_animate:not(.animated) {
+    opacity: 0;
+}
+
+.alingcenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row; /* default flex-direction for desktop */
+    align-items: center;
+    width: 100%;
+}
+
+.row-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 100%;
+    width: 100%;
+    height: 500px;
+    background-image: url('/assets/brick_bg.png');
+    font: 500 normal 1.25rem Raleway, sans-serif;
+    line-height: 1.25;
+    gap: 10px;
+}
+
+.row-block img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.row-block p{
+    max-width: 700px;
+}
+
+.servicii {
+    width: 100%;
+}
+
+.servicii-footer .servicii-header{
+    font: 900 normal 1.5rem Raleway, sans-serif;
+}
+.servicii-header {
+    font: 900 normal 1.25rem Raleway, sans-serif;
+    line-height: 1.25;
+    gap: 10px;
+}
+
+.servicii-header .row {
+    margin-top: 20px;
+}
+
+.top_img img:nth-child(1){
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.servicii-footer{
+    position: relative;
+}
+
+.servicii-footer .instrument{
+    top: 40%;
+}
+
+.servicii-head{
+    position: relative;
+    padding-top: 80px;
+}
+
+.instrument{
+    position: absolute;
+    top: 32%;
+    left: 0;
+    right: 0;
+}
+
+.house{
+    width: 100%;
+    position: relative;
+}
+
+.house-img img{
+    width: 100%;
+    /* height: 800px; */
+    object-fit: cover;
+}
+
+.house-text{
+    position: absolute;
+    top: 55%;
+    width: 100%;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+
+ol{
+    display: flex;
+    flex-direction: column;
+    align-items: start !important;
+    justify-content: start !important;
+    text-align: start !important;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Change flex-direction to column on mobile */
+    }
+
+    #form_container {
+        flex-direction: column; /* Change flex-direction to column on mobile */
+    }
+
+    .row-block {
+        height: auto; /* Adjust height for better fit on mobile */
+    }
+
+    .row-block img {
+        height: auto; /* Adjust image height for better fit on mobile */
+    }
+
+    .navbar-mobile {
+        display: block; /* Show mobile navbar */
+    }
+
+    .navbar {
+        display: none; /* Hide desktop navbar */
+    }
+
+    .instrument{
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    .row-block h3{
+        margin-top: 10px;
+    }
+
+    .row-block p{
+        margin-bottom: 10px;
+    }
+}

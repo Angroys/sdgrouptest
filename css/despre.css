@@ -1,0 +1,271 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "Raleway";
+    src: url("../assets/fonts/Raleway/Raleway-Regular.ttf") format("truetype");
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: "Raleway";
+    src: url("../assets/fonts/Raleway/Raleway-Medium.ttf") format("truetype");
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: "Raleway";
+    src: url("../assets/fonts/Raleway/Raleway-Light.ttf") format("truetype");
+    font-weight: 300;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    gap: 30px;
+    background-color: red !important;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 9999;
+}
+
+.alingcenter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+}
+
+.row-block{
+    width: 100%;
+    height: 500px;
+    background-color: #fff;
+}
+
+.half {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+    background-color: #fff;
+}
+
+.left-half {
+    background-color: yellow;
+}
+
+.row:nth-child(1) .right-half {
+    background-image: url('/assets/slider/slide10.jpg');
+}
+.row:nth-child(2) .left-half {
+    background-color: #fff;
+    background-image: url('/assets/slider/slide1.jpg');
+}
+
+@media only screen and (max-width: 768px) {
+    .half{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .row{
+        flex-direction: row;
+    }
+    .left-half {
+        background-color: yellow;
+        clip-path: polygon(0 0, 0% 100%, 100% 0);
+    }
+    .right-half {
+        background-color: yellow;
+        clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+        margin-left: -98%;
+    }
+    .row:nth-child(2) .left-half {
+        background-color: #fff;
+        clip-path: polygon(100% 100%, 0% 100%, 0 0);
+    }
+    .row:nth-child(2) .right-half {
+        background-color: #fff;
+        clip-path: polygon(100% 100%, 100% 0, 0 0);
+    }
+    
+    .row:nth-child(2) .half{
+       align-items: end;
+    } 
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .nav-left ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav .nav-left ul li {
+    margin-right: 20px;
+}
+
+nav .nav-left ul li a {
+    text-decoration: none;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav .nav-left ul li a:hover {
+    color: #e8491d;
+}
+
+nav .nav-right .close {
+    text-decoration: none;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav .nav-right .close:hover {
+    color: #e8491d;
+}
+
+.about-section{
+    font: 500 normal 1.5rem Raleway, sans-serif;
+    padding-top: 100px !important;
+    background-image: url('/assets/brick_bg.png');
+
+}
+
+.about-section, .team-section, .quote-section {
+    padding: 60px 0;
+}
+
+.about-section h1, .team-section h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.team-section p{
+    text-align: center !important;
+}
+
+.about-section p, .team-section p {
+    text-align: justify;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.image-section img {
+    width: 100%;
+    height: 600px;
+    display: block;
+    margin-top: 40px;
+}
+
+.quote-section {
+    background-image: url('/assets/brick_bg.png');
+    text-align: center;
+    padding: 40px;
+}
+
+.quote-section blockquote {
+    font: 500 normal 1.5rem Raleway, sans-serif;
+    margin: 0;
+    padding: 20px;
+    font-size: 24px;
+    font-style: italic;
+    color: #555;
+    /* border-left: 5px solid #039be5 !important; */
+    border-left: 0px;
+}
+
+.quote-section blockquote footer {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #999;
+}
+
+
+.team-section{
+    font: 500 normal 1.25rem Raleway, sans-serif;
+    background-image: url('/assets/brick_bg.png');
+}
+
+.card {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    width: 200px;
+    min-height: 215px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    background-color: #fff;
+}
+.icon {
+    margin-bottom: 12px;
+    font-size: 48px;
+    color: #039be5;
+}
+.card-text {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px 0;
+}

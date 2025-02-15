@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <form class="calculator">
+        <h3>Marimi Apartament</h3>
+        <div class="calculatorBlock">
+            <div class="flex-row">
+                <h4>Suprafata totala al apartamentului</h4>
+                <input id="totalSpace" type="number" min="0" value="0" required class="calculatorInput"/>
+            </div>
+            <div class="flex-row">
+                <h4>Inaltimea al apartamentului</h4>
+                 <input id="height" type="number" min="0" value="0" required class="calculatorInput"/>
+            </div>
+        </div>
+        <h3>Electricitate</h3>
+        <div class="calculatorBlock">
+            <div class="flex-row">
+                <h4>Nr corpurilor de iluminat</h4>
+                 <input id="bulbs" type="number" min="0" value="0" required class="calculatorInput"/>
+            </div>
+            <div class="flex-row">
+                <h4>Nr prizelor si intrerupatoarelor</h4>
+                 <input id="outlet" type="number" min="0" value="0" required class="calculatorInput"/>
+            </div>
+        </div>
+        <h3>Apa si canalizare</h3>
+        <div class="calculatorBlock">
+            <div class="flex-row">
+                <h4>Puncte apa si canaliare</h4>
+                 <input id="water" type="number" min="0" value="0" required class="calculatorInput"/>
+            </div>
+            <div class="flex-row">
+                <h4>Suprafata Podea calda</h4>
+                 <input id="heatedFloor" type="number" min="0" value="0" required class="calculatorInput"/>
+            </div>
+            <div class="flex-row">
+                <h4>Nr usi</h4>
+                 <input id="doors" type="number" min="0" value="0" required class="calculatorInput"/>
+            </div>
+        </div>
+        <button id="calculatorBtn">Afla pretul</button>
+        <h4 id="price_final"></h4>
+    </form>
+    <script src="/js/calculator.js"></script>
+</body>
+</html>

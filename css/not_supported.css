@@ -1,0 +1,64 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Helvetica", "Corbel", sans-serif;
+  font-size: 14px;
+  color: #212121;
+  line-height: 1.4;
+  background-color: #eee;
+}
+
+.ie-warning-wrapper {
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.intro {
+  margin: 100px 0 0;
+  padding: 100px 0;
+}
+
+.intro h1 {
+  margin: 40px auto;
+}
+.intro span {
+  font: 400 normal 20px sans-serif;
+}
+
+.ie-warning-wrapper-close {
+  font-size: 0.5em;
+}
+
+.upgrade-options {
+  margin: 30px 0;
+}
+
+.upgrade-option {
+  display: inline-block;
+  padding: 30px;
+  margin: 5px;
+  width: 120px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  background: #eee;
+  border-radius: 4px;
+}
+
+.upgrade-option img {
+  width: 80px;
+  height: 80px;
+}
+
+.upgrade-option span {
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=not_supported.css.map */

@@ -1,0 +1,113 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "Raleway";
+    src: url("../assets/fonts/Raleway/Raleway-Regular.ttf") format("truetype");
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: "Raleway";
+    src: url("../assets/fonts/Raleway/Raleway-Medium.ttf") format("truetype");
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: "Raleway";
+    src: url("../assets/fonts/Raleway/Raleway-Light.ttf") format("truetype");
+    font-weight: 300;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    gap: 30px;
+    background-color: #fff !important;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 9999;
+}
+
+.alingcenter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+}
+
+.contacte-header{
+    padding-top: 100px;
+    gap: 10px;
+    font: 500 normal 1.25rem Raleway, sans-serif;
+}
+
+.contacte-header .row{
+    margin-top: 20px;
+}
+
+.contacte{
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.contact_block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.socials i{
+    font-size: 25px;
+}
+
+.contact_block .contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    /* font: 400 normal 16px / 0.9 sans-serif; */
+    font: 500 normal 16px / 0.9 Raleway, sans-serif;
+
+}
+.contact_block .contacts a{
+    color: #282629;
+}
+
+.contact_block .contacts .d_flex{
+    gap: 10px;
+}
+
+.location{
+    max-width: 1000px;
+    width: 100%;
+    margin: 50px auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .row {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; 
+        gap: 10px;
+    }
+}
